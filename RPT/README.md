@@ -47,10 +47,9 @@ ResEditX is a powerful Google Docs add-on that uses artificial intelligence to h
 - **Your Data Stays Yours**: We never access your documents outside of the add-on session
 
 ### 🎨 Screenshots
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](image.png) - https://raw.githubusercontent.com/kkvishvaa/reseditx-assets/c75ac6e68c72799a475d31a0ceaa07b9dc4af52e/RPT/image.png
+![alt text](image-1.png) -https://raw.githubusercontent.com/kkvishvaa/reseditx-assets/c75ac6e68c72799a475d31a0ceaa07b9dc4af52e/RPT/image-1.png
+
 #### Keywords & Analysis Tab
 - Extract keywords from job descriptions with AI
 - Get comprehensive ATS analysis scores
