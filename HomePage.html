@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResEditX - AI Resume Assistant</title>
+  <style>
+    :root {
+      --grad-start: #6a11cb; /* purple */
+      --grad-end:   #2575fc; /* blue */
+      --secondary: #f8f9ff;
+      --text: #333;
+      --light: #666;
+    }
+
+    /* smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: var(--text);
+      background: white;
+    }
+
+    header {
+      /* new gradient */
+      background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
+      color: white;
+      padding: 3.25rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    header img {
+      width: 90px;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin: 0.5rem 0 0.25rem;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      opacity: 0.98;
+      margin: 0;
+    }
+
+    nav {
+      background: white;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--grad-end);
+      font-weight: 600;
+      transition: opacity 0.2s ease;
+    }
+    nav a:hover { opacity: 0.75; }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      /* prevent sticky nav overlap when jumping to anchors */
+      scroll-margin-top: 88px;
+    }
+
+    section h2 {
+      /* gradient text that matches header */
+      background: linear-gradient(90deg, var(--grad-start), var(--grad-end));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    section p, section li {
+      font-size: 1.05rem;
+      color: var(--light);
+    }
+
+    ul { list-style: none; padding: 0; }
+    ul li {
+      background: var(--secondary);
+      padding: 0.85rem 1rem;
+      margin: 0.5rem 0;
+      border-left: 4px solid var(--grad-end);
+      border-radius: 8px;
+    }
+
+    .screenshot {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 1rem 0;
+      transition: transform 0.25s ease;
+    }
+    .screenshot:hover { transform: scale(1.015); }
+
+    footer {
+      background: var(--secondary);
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: var(--light);
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.1rem; }
+      nav a { margin: 0 0.6rem; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://raw.githubusercontent.com/kkvishvaa/reseditx-assets/7e038fe14589d4ba8b157da485f8592c52dcad3a/icon48.png" alt="ResEditX Logo">
+    <h1>ResEditX</h1>
+    <p>AI-Powered Resume Optimization for Google Docs</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#screenshots">Screenshots</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About ResEditX</h2>
+    <p>
+      ResEditX is a Google Docs add-on that uses artificial intelligence to help you create 
+      ATS-friendly resumes and optimize your content for better job application success.
+    </p>
+    <p>
+      With ResEditX, you can extract job keywords, analyze ATS compatibility, and get AI-powered 
+      suggestions to improve your resume — all inside Google Docs.
+    </p>
+  </section>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>AI Keyword Extraction:</strong> Pulls keywords from job descriptions automatically.</li>
+      <li><strong>ATS Score Analysis:</strong> Get compatibility scores and recommendations.</li>
+      <li><strong>Bullet Point Optimizer:</strong> Transform and generate impactful resume bullet points.</li>
+      <li><strong>Smart Text Processing:</strong> Optimize selected text or enter your own for AI suggestions.</li>
+      <li><strong>Privacy First:</strong> No data storage — everything stays in Google Docs.</li>
+    </ul>
+  </section>
+
+  <section id="screenshots">
+    <h2>Screenshots</h2>
+    <img class="screenshot" src="https://raw.githubusercontent.com/kkvishvaa/reseditx-assets/c75ac6e68c72799a475d31a0ceaa07b9dc4af52e/RPT/image.png" alt="ResEditX Screenshot 1">
+    <img class="screenshot" src="https://raw.githubusercontent.com/kkvishvaa/reseditx-assets/c75ac6e68c72799a475d31a0ceaa07b9dc4af52e/RPT/image-1.png" alt="ResEditX Screenshot 2">
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>
+      We take privacy seriously. ResEditX does not collect or store any personal user data.  
+      Read our full privacy policy here:  
+      <a href="https://kkvishvaa.github.io/reseditx-assets/PRIVACY.html" target="_blank" rel="noopener">View Privacy Policy</a>
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Need help or have questions? Reach us at:  
+      <a href="mailto:f2399899@gmail.com">f2399899@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ResEditX. All rights reserved.</p>
+  </footer>
+</body>
+</html>
